@@ -37,7 +37,7 @@ Game()
 
 Again = input("Do you want to play again? Type in y or n\n")
 
-while Again.lower() != "yes" or "no":
+while Again.lower() != "y" or "n":
     Again = input("Type only in y or n\n")
     print()
 
