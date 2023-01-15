@@ -14,7 +14,7 @@ def Game():
 
     NumLimit = int(NumLimit)
 
-    print("Ok, guess a number between 0 and", NumLimit)
+    print("\nOk, guess a number between 0 and", NumLimit)
 
     RandomNum = (random.randint(0,NumLimit))
 
@@ -23,15 +23,15 @@ def Game():
     while NumGuess != RandomNum:
 
         if NumGuess < RandomNum:
-            print("A little bit higher!")
+            print("A little bit higher!\n")
             NumGuess = int(input())
 
         elif NumGuess > RandomNum:
-            print("A little bit lower!")
+            print("A little bit lower!\n")
             NumGuess = int(input())
 
             
-    print("You guessed it!")
+    print("You guessed it!\n")
 
     Again = input("Do you want to play again? Type in y or n\n")
 
@@ -43,7 +43,7 @@ def Game():
        Game()
     
     elif Again.lower() == "n":
-          print("Bye bye!")
+          print("Bye bye!\n")
 
 Game()
 
