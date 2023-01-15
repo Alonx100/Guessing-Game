@@ -9,6 +9,9 @@ def heading():
 heading()
 
 def Game():
+
+    count = 1
+
     NumLimit = input("Enter a limit: ")
 
     while not NumLimit.isdigit():
@@ -25,15 +28,17 @@ def Game():
     while NumGuess != RandomNum:
 
         if NumGuess < RandomNum:
-            print("A little bit higher!\n")
+            count += 1
+            print("\nA little bit higher!\n")  
             NumGuess = int(input())
 
         elif NumGuess > RandomNum:
-            print("A little bit lower!\n")
+            count += 1
+            print("\nA little bit lower!\n")
             NumGuess = int(input())
 
             
-    print("You guessed it!\n")
+    print("You guessed it in", count,"tries\n")
 
     Again = input("Do you want to play again? Type in y or n\n")
 
