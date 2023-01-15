@@ -33,19 +33,21 @@ def Game():
             
     print("You guessed it!")
 
+    Again = input("Do you want to play again? Type in y or n\n")
+
+    while Again.lower() != "y" and Again.lower() != "n":
+        Again = input("Type only in y or n\n")
+        print()
+
+    if Again.lower() == "y":
+       Game()
+    
+    elif Again.lower() == "n":
+          print("Bye bye!")
+
 Game()
 
-Again = input("Do you want to play again? Type in y or n\n")
 
-while Again.lower() != "y" or "n":
-    Again = input("Type only in y or n\n")
-    print()
-
-if Again.lower() == "y":
-   Game()
-    
-elif Again.lower() == "n":
-      print("Bye bye!")
 
 
 
