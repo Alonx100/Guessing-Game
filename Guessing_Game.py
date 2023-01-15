@@ -1,3 +1,5 @@
+#GuessingGame Made by Alon Rehin for CIS 261
+
 import random
 
 def heading():
